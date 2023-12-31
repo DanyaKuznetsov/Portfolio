@@ -1,0 +1,27 @@
+header{
+    background: linear-gradient(45deg,red, yellow);
+    height: 100vh;
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    animation: headerBg 5s infinite alternate linear;
+}
+nav{
+    height: 60px;
+    background: white;
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+    width: 100%;
+}
+body{
+    margin: 0;
+    height: 2000px;
+}
+@keyframes headerBg{
+    0%{
+        background-position: top 25% right 25%;
+    }
+    100%{
+        background-position: bottom 25% left 25%;
+    }
+}
