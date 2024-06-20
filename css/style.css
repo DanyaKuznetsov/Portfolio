@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, var(--color3), var(--color4));
+    height: 100vh;
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    animation: headerBg 5s infinite alternate linear;
+}
+
+h1 {
+    font-size: 56px;
+    color: var(--color1);
+    margin-bottom: 24px;
+}
+
+.header__text hr {
+    height: 2px;
+    background: var(--color1);
+    border: none;
+    margin-bottom: 24px;
+}
+
+.header__text p {
+    font-size: 24px;
+    color: var(--color1);
+    margin-bottom: 24px;
+}
+
+.header__text a {
+    border: 1px solid var(--color1);
+    padding: 16px 32px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--color1);
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.header__text a:hover {
+    background: white;
+    color: var(--color3);
+}
+
+.header__elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 60px;
+}
+
+.nav {
+    background: var(--color1);
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.container {
+    max-width: 1340px;
+    margin: auto;
+    padding: 0 20px 0 20px;
+    height: 100%;
+}
+
+.nav__elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links {
+    gap: 64px;
+    display: flex;
+}
+
+.nav__socialmedia {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__socialmedia a {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    height: 2000px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    --color1: rgb(250, 246, 246);
+    --color2: rgb(12, 12, 12);
+    --color3: pink;
+    --color4: lightblue;
+    color: var(--color2);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav__links a {
+    color: black;
+    transition: all 0.5s;
+}
+
+.nav__links a:hover {
+    color: orange;
+}
+
+.telegram {
+    color: #375DE4;
+}
+
+.whatsapp {
+    color: #14B106;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 80px 0;
+}
+h2{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 100%;
+    margin-bottom: 60px;
+}
+
+@keyframes headerBg {
+    0% {
+        background-position: top 25% right 25%;
+    }
+
+    100% {
+        background-position: bottom 25% left 25%;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(223, 104, 104), rgb(241, 241, 98));
+    border-radius: 10px;
+}
+.about-me h2{
+    color: var(--color4);
+}
+.about-me__elements{
+    display: flex;
+    gap: 110px;
+    align-items: end;
+}
