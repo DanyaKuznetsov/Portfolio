@@ -1,0 +1,152 @@
+@media (max-width: 992px) {
+    .header__elements {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    header{
+        height: auto;
+        padding: 100px 0 50px 0;
+    }
+    .about-me__elements {
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{ 
+        text-align: center;
+    }
+    .skills__elements{
+        justify-content: center;
+    }
+    .footer__elements p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: var(--color1);
+        align-items: center;
+        padding-top: 100px;
+        z-index: 1;
+        gap: 32px;
+        transition: all 0.5s;
+    }
+
+    .nav__links_active {
+        left: 0;
+    }
+
+    .nav__links a {
+        font-weight: 800;
+    }
+
+    .nav__logo {
+        z-index: 3;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        width: 40px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        position: relative;
+        z-index: 5;
+    }
+
+    .hamburger span {
+        width: 40px;
+        height: 2px;
+        background: var(--color4);
+        display: block;
+        position: absolute;
+        right: 0;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(2) {
+        top: 9px;
+    }
+
+    .hamburger span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .nav__socialmedia a {
+        font-size: 32px;
+    }
+
+    .nav__socialmedia {
+        z-index: 4;
+        position: relative;
+    }
+
+    .hamburger_active span:nth-child(1) {
+        top: 9px;
+        transform: rotate(-45deg);
+    }
+
+    .hamburger_active span:nth-child(3) {
+        bottom: 9px;
+        transform: rotate(45deg);
+    }
+
+    .hamburger_active span:nth-child(2) {
+        right: 40px;
+        opacity: 0;
+    }
+    .footer__elements{
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    
+}
+@media (max-width: 500px){
+    header img{
+        width: 100%;
+        max-width: 420px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    .about-me img{
+        max-width: 420px;
+        width: 100%;
+    }
+    .about-me__elements{
+        gap: 40px;
+    }
+    .skills__elements{
+        gap: 40px;
+    }
+    .skills__item{
+        max-width: 100%;
+    }
+    .skills__icon{
+        width: 100%;
+        height: 100px;
+    }
+    @keyframes skillsAnimation {
+        0% {
+            transform: translateY(5px);
+        }
+    
+        100% {
+            transform: translateY(15px);
+        }
+    }    
+}

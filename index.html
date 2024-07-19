@@ -2,6 +2,11 @@
 <html lang="ru">
 
 <head>
+    <meta property="og:title" content="WEB - Разработчик С 10 лет">
+    <meta property="og:description" content="Портфолио веб-разработчика Данилы Кузнецова">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
@@ -11,30 +16,38 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <script src="https://kit.fontawesome.com/0dfb09cd7e.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
     <nav class="nav">
         <div class="container">
             <div class="nav__elements">
-                <a href="" class="nav__logo">
-                    <img src="./img/nav__logo.svg" alt="">
+                <a href="#header" class="nav__logo">
+                    <img src="./img/nav__logo 1.png" alt="">
                 </a>
                 <div class="nav__links">
-                    <a href="">Обо мне</a>
-                    <a href="">Навыки</a>
-                    <a href="">Работы</a>
-                    <a href="">Контакты</a>
+                    <a href="#about-me">Обо мне</a>
+                    <a href="#skills">Навыки</a>
+                    <a href="#projects">Работы</a>
+                    <a href="#contacts">Контакты</a>
                 </div>
                 <div class="nav__socialmedia">
-                    <a href="" class="telegram"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/DanilaKuznets" class="telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://wa.me/79218701546" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
-    <header>
+    <header id="header">
         <div class="container">
             <div class="header__elements">
                 <div class="header__text">
@@ -44,22 +57,22 @@
                     </h1>
                     <hr>
                     <p>Всё верно! Это не шутка!</p>
-                    <a href="">Подробнее</a>
+                    <a href="#about-me">Подробнее</a>
                 </div>
-                <img src="./img/Header-photo.png" alt="">
+                <img src="./img/header.png" alt="">
             </div>
         </div>
     </header>
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="container">
             <h2>Обо мне</h2>
             <div class="about-me__elements">
-                <img src="./img/Header-photo.png" alt="">
+                <img src="./img/about-me.png" alt="">
                 <p>
                     Я начал изучать программирование в 10 лет, и теперь мне всего 15, но я уже достиг значительных
                     успехов и хочу пригласить вас для сотрудничество в создании веб-приложений. Я очень стараюсь и не
                     перестаю удивляться тому, что можно создать с помощью кода. Мой талант и упорство доказывают, что
-                    возраст не является препятствием для достижения своих целей. 
+                    возраст не является препятствием для достижения своих целей.
                     <br>
                     <br>
                     Я уверен, что будущее будет ярким и успешным, и я надеюсь, что мы сможем вместе создавать отличные
@@ -68,6 +81,99 @@
             </div>
         </div>
     </section>
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Навыки</h2>
+            <div class="skills__elements">
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        HTML
+                    </div>
+                    <p>
+                        Я хорошо разбираюсь в HTML, могу создавать веб-страницы, структурировать контент и улучшать
+                        дизайн с помощью HTML5.
+                    </p>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        CSS
+                    </div>
+                    <p>
+                        Я хорошо разбираюсь в CSS, могу управлять макетом, типографикой и цветовой схемой для создания
+                        визуально привлекательных интерфейсов.
+                    </p>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        JS
+                    </div>
+                    <p>
+                        Я хорошо разбираюсь в JavaScript, могу создавать динамические веб-страницы, управлять HTML/CSS и
+                        улучшать функциональность.
+                    </p>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        FIGMA
+                    </div>
+                    <p>
+                        Я хорошо разбираюсь в Figma, могу создавать пользовательские интерфейсы, макеты, прототипы и
+                        высококачественные проекты.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="projects__elements">
+                <a target="_blank" class="projects__link" href="https://danyakuznetsov.github.io/InteriorDesign/">
+                    <div class="wrapper"></div>
+                    <div class="content">Interior</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="contacts__wrapper">
+
+        </div>
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Оставьте заявку и я свяжусь с вами в течении дня!</p>
+            <hr>
+            <form method="post" target="send"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfKnfsoa-OsHnceuowh78lgVHR8nheR1MzXgX6-Cuj1EkdMdQ/formResponse">
+                <iframe name="send"></iframe>
+                <div class="form__wrapper">Ваша заявка отправлена</div>
+                <label for="name">Ваше имя</label>
+                <input name="entry.943669264" id="name" type="text" placeholder="Введите имя" required>
+
+                <label for="email">Ваша почта</label>
+                <input name="entry.187648179" id="email" type="email" placeholder="Введите почту" required>
+
+                <label for="comment">Комментарий</label>
+                <textarea name="entry.1950481586" id="comment" name="" placeholder="Комментарий"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__elements">
+                <a href="">
+                    <img src="./img/nav__logo 1.png" alt="">
+                </a>
+                <p>Все права защищены и принадлежат Кузнецову Даниле</p>
+                <div class="footer__socialmedia">
+                    <a href="https://t.me/DanilaKuznets" class="telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://wa.me/79218701546" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
